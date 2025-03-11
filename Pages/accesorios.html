@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Accesorios
+        </title>
+
+        <link rel="icon" href="../Assets/img/icon.png">
+        <link rel="stylesheet" href="../CSS/catalog.css"> 
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Estilos adicionales para diseño personalizado (opcional) -->
+            <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos para las tarjetas */
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+            border-bottom: 5px solid #ccc;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-content h6 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-content .price {
+            font-size: 16px;
+            color: #888;
+        }
+
+        .card-hover-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+
+        .card:hover .card-hover-content {
+            opacity: 1;
+        }
+
+        .card-hover-content p {
+            margin-bottom: 10px;
+        }
+
+        .card-hover-content button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-hover-content button:hover {
+            background: #218838;
+        }
+    </style>
+    </head>
+    <body>
+        <script src="/JS/products.js"></script>
+        <br>
+        <br>
+        <br>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+              <div class="container">
+                <a class="navbar-brand" href="/index.html">Game On</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/jerseys.html">Jerseys</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/gorras.html">Gorras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/tenis.html">Tenis</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Pages/accesorios.html">Accesorios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/apislocas.html">En vivo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/acercade.html">Acerca de</a></li>
+                  </ul>
+                  <form class="d-flex">
+                    <a href="/Pages/carrito.html">
+                      <button class="btn btn-danger" type="button">
+                        <img src="/Assets/img/bag.png" alt="shopbag" width="16" height="16">
+                        Ir al carrito
+                      </button>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </header>
+      
+         <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="cart-sidebar" class="cart-sidebar">
+            <div class="cart-sidebar-content">
+                <button id="close-sidebar" class="btn btn-danger">Cerrar</button>
+                <h4 id="selected-product-name"></h4>
+                <p id="selected-product-description"></p>
+                <button id="add-to-cart" class="btn btn-primary">Agregar a la bolsa</button>
+                <button id="go-to-cart" class="btn btn-secondary">Ir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="container">
+          <h1 class="text-center text-muted">Accesorios</h1>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/MochilaDetroit.jpeg" alt="Mochila Detroit Lions NFL">
+                      <div class="card-content">
+                          <h6>Mochila Detroit Lions NFL</h6>
+                          <span class="price"><del>$1999</del> $899</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Lleva tu pasión por los Lions con esta práctica y resistente mochila NFL.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/SF.jpg" alt="Mochila San Francisco 49ers NFL">
+                      <div class="card-content">
+                          <h6>Mochila San Francisco 49ers NFL</h6>
+                          <span class="price"><del>$999</del> $699</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Ideal para fans de los 49ers, diseño oficial y gran capacidad.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/cowboys.jpg" alt="Mochila Dallas Cowboys NFL">
+                      <div class="card-content">
+                          <h6>Mochila Dallas Cowboys NFL</h6>
+                          <span class="price"><del>$1499</del> $999</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Representa a los Cowboys con esta mochila oficial, cómoda y versátil.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/BochaDiegote.jpeg" alt="Balón Diegote Por Siempre 2020">
+                      <div class="card-content">
+                          <h6>Balón Diegote Por Siempre 2020</h6>
+                          <span class="price"><del>$102599</del> $20199</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Edición especial en honor a Diego Maradona, imprescindible para coleccionistas.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/Wilson.jpeg" alt="Balón Wilson Edición Limitada">
+                      <div class="card-content">
+                          <h6>Balón Wilson Edición Limitada</h6>
+                          <span class="price"><del>$2999</del> $2299</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Balón premium Wilson con diseño exclusivo para los verdaderos fanáticos.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/termosf.jpg" alt="Termo 350 ml San Francisco 49ers">
+                      <div class="card-content">
+                          <h6>Termo 350 ml San Francisco 49ers</h6>
+                          <span class="price"><del>$599</del> $399</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Mantén tu bebida a la temperatura ideal con este termo oficial de los 49ers.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/termogb.jpg" alt="Termo 350 ml Green Bay Packers">
+                      <div class="card-content">
+                          <h6>Termo 350 ml Green Bay Packers</h6>
+                          <span class="price"><del>$599</del> $399</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Hidratación con estilo gracias a este termo de los Packers.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/Amamemas.jpg" alt="Playera América Campeón Clausura 2024">
+                      <div class="card-content">
+                          <h6>Playera América Campeón Clausura 2024</h6>
+                          <span class="price"><del>$999</del> $699</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>¡Ámame más! América es campeón, celébralo con esta camiseta.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/elmasgrande.jpg" alt="Bolsa América Siempre El Más Grande">
+                      <div class="card-content">
+                          <h6>Bolsa América Siempre El Más Grande</h6>
+                          <span class="price"><del>$499</del> $299</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Demuestra tu orgullo azulcrema con esta práctica y estilizada bolsa.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="../Assets/img/Accesorios/Peluche.jpg" alt="Peluche Club América Agui">
+                      <div class="card-content">
+                          <h6>Peluche Club América Agui</h6>
+                          <span class="price"><del>$1999</del> $299</span>
+                      </div>
+                      <div class="card-hover-content">
+                          <p>Tierno y auténtico peluche Agui, perfecto para fans del América.</p>
+                          <button>Agregar al carrito</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <footer class="footer text-center">
+        <div class="container">
+          <p>&copy; 2024 Game On. Todos los derechos reservados.</p>
+          <p>
+            <a href="https://nailit.netlify.app/" class="font-weight-bold" target="_blank">Adlerero y</a>
+            <a href="https://guineoatreides1.netlify.app/" class="font-weight-bold" target="_blank">Guineo</a>
+          </p>
+        </div>
+      </footer>
+
+      <script src="../JS/products.js"></script>
+    </body>
+</html>

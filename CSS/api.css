@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #FF6B00;
+    --secondary-color: #0077BE;
+    --accent-color: #FF3131;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-top: 4rem;
+  }
+  
+  .navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: white !important;
+    text-transform: uppercase;
+  }
+  
+  .carousel {
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+  }
+  
+  .carousel-caption {
+    bottom: 4rem;
+    z-index: 10;
+    text-align: left;
+    left: 10%;
+    right: 10%;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .marketing {
+    background-color: white;
+    padding: 4rem 0;
+  }
+  
+  .marketing .col-lg-3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .marketing .col-lg-3:hover {
+    transform: scale(1.05);
+  }
+  
+  .marketing .col-lg-3 img {
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+  }
+  
+  .marketing .col-lg-3:hover img {
+    box-shadow: 0 0 15px rgba(255,107,0,0.5);
+  }
+  
+  .featurette {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  }
+  
+  .featurette-heading {
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  h1, h3 {
+    color: var(--primary-color, #FF6B00);
+  }
+  
+  .footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  
+  .team-member {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .team-member h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-member p {
+    color: #666;
+  }
+  
+  .company-story {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+  }
+  
+  .card {
+    background-color: #FFF8DC !important;
+  }
+  .btn-primary {
+    background-color: var(--primary-brown) !important;
+    border-color: var(--primary-brown) !important;
+  }
+  .btn-primary:hover {
+    background-color: var(--secondary-brown) !important;
+    border-color: var(--secondary-brown) !important;
+  }
+  .form-check-input:checked {
+    background-color: var(--primary-brown) !important;
+    border-color: var(--primary-brown) !important;
+  }
+  

@@ -1,0 +1,23 @@
+        :root {
+            --primary-brown: #0080ff;
+            --secondary-brown: #27b7ff;
+            --light-brown: #87c3de;
+        }
+        body {
+            background-color: var(--light-brown) !important;
+        }
+        .card {
+            background-color: #a5ddf6 !important;
+        }
+        .btn-primary {
+            background-color: var(--primary-brown) !important;
+            border-color: var(--primary-brown) !important;
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary-brown) !important;
+            border-color: var(--secondary-brown) !important;
+        }
+        .form-check-input:checked {
+            background-color: var(--primary-brown) !important;
+            border-color: var(--primary-brown) !important;
+        }

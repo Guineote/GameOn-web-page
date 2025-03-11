@@ -1,0 +1,42 @@
+
+  #product-table-container {
+    max-height:fit-content; /* Ajusta la altura máxima según necesites */
+    max-width: fit-content;  /* Ajusta el ancho máximo al 100% del padre */
+    overflow: auto;   /* Activa las barras de desplazamiento si el contenido excede */
+    border: 1px solid #ddd; /* Opcional: agregar un borde para visualizar el área */
+    padding: 10px;    /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding y bordes en el tamaño */
+  }
+
+  table {
+    width: fit-content; /* Asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Combina bordes de las celdas */
+  }
+
+  th, td {
+    text-align: left; /* Opcional: alinea el texto a la izquierda */
+    padding: 8px; /* Espaciado dentro de las celdas */
+    border: 1px solid #ddd; /* Borde de las celdas */
+  }
+
+  th {
+    background-color: #f4f4f4; /* Fondo del encabezado */
+  }
+
+  .btn-edit {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
