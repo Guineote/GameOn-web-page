@@ -1,0 +1,9 @@
+Para acceder como usuario, procedemos al pago en el carrito de compras y colocamos el usuario "user1" con la contraseña "user01", lo que nos guiará a la pantalla de pago.
+
+Para acceder como administrador, procedemos al pago en el carrito de compras y colocamos el usuario "JuiceWRLD999" con la contraseña "jaredguineo02", lo que nos guiará al manager.
+
+
+
+
+La base de datos esta local, y por ello no se cargaran los productos en la página de product manager a usted.
+
